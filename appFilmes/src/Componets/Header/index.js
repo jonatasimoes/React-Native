@@ -1,26 +1,30 @@
 import React from "react";
-import {View, Text, StyleSheet, Image} from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import {View, StyleSheet, Image} from "react-native";
 
 
 export default function Header() {
     const img = require('../../img/MyFlme-logo.png');
     return (
-        <SafeAreaView style={styles.header}>
+        <View style={styles.header}>
             <Image source={img}
-                style={{width: 125, height:100}} 
-            />
-
-            
-        </SafeAreaView>
+                style={styles.imgLogo} 
+            />            
+        </View>
     );  
 };
 
 const styles = StyleSheet.create({
+    imgLogo: {
+        width: 200,
+        height: 51,
+    },
     header: {
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 1
+        marginTop: 2,
+        marginBottom: 5,
+        paddingTop: 5,
+
     }
 });
