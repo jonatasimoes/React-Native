@@ -1,14 +1,20 @@
 import React from "react";
-import { View, Text } from "react-native";
 import { Picker } from '@react-native-picker/picker';
 
 
-export default function PickerItem() {
+export default function PickerItem({ moedas = [], moedaSelecionada, onChange }) {
+
+  const moedasItem = moedas.map((item) => {
+    return <Picker.Item value={item.value} key={item.key} label={item.label} />
+  })
+
   return (
-    <View>
-        <Picker>
-            <Picker.Item value='BTC' key={0} label="BTC" />
+        <Picker
+          selectedValue={moedaSelecionada ?? ''}
+          onValueChange={(itemValue) => onChange(itemValue)}
+        >
+            <Picker.Item label="Selecione..." value="" key="placeholder" />
+            {moedasItem}
         </Picker>
-    </View>
   );
 }
