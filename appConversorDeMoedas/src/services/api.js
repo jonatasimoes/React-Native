@@ -1,9 +1,9 @@
-import axios from "axios";
+import axios from 'axios';
 
-const api = axios.create({
+// https://economia.awesomeapi.com.br/json/all
 
-    baseURL: 'https://economia.awesomeapi.com.br/json/'
+// > Rota para buscar BTC > BRL : all/BTC-BRL
 
-});
-
-export default api;
+export const api = axios.create({
+  baseURL: "https://economia.awesomeapi.com.br/json/"
+})

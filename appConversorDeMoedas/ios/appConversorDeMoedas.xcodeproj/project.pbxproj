@@ -111,7 +111,7 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
-				167D04B88D334F9091AC1742 /* Upload Debug Symbols to Sentry */,
+				D756F0CCD59943B48E467FF6 /* Upload Debug Symbols to Sentry */,
 			);
 			buildRules = (
 			);
@@ -238,7 +238,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-appConversorDeMoedas/Pods-appConversorDeMoedas-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		167D04B88D334F9091AC1742 /* Upload Debug Symbols to Sentry */ = {
+		D756F0CCD59943B48E467FF6 /* Upload Debug Symbols to Sentry */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

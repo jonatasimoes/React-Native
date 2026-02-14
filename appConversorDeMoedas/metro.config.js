@@ -12,4 +12,4 @@ const {
  */
 const config = {};
 
-module.exports = withSentryConfig(withSentryConfig(mergeConfig(getDefaultConfig(__dirname), config)));
+module.exports = withSentryConfig(mergeConfig(getDefaultConfig(__dirname), config));

@@ -1,106 +1,36 @@
-# appConversorDeMoedas 🚀
+This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-**Conversor de moedas (React Native)** — pequeno aplicativo que lista moedas e permite selecionar uma para conversão. Projeto de estudo/faculdade com interface simples, carregamento via API pública e registro de erros com Sentry.
+# Getting Started
 
----
+> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
 
-## 🔎 Visão geral
-- Nome: **appConversorDeMoedas**
-- Plataforma: Android / iOS (React Native)
-- API usada: https://economia.awesomeapi.com.br/json/ (arquivo `src/services/api.js`)
+## Step 1: Start Metro
 
----
+First, you will need to run **Metro**, the JavaScript build tool for React Native.
 
-## 🧰 Tecnologias e dependências principais
-- **React Native** v0.83.1
-- **@react-native-picker/picker** (Picker UI)
-- **axios** (requisições HTTP)
-- **@sentry/react-native** (report de erros)
-- **react-native-safe-area-context** (SafeAreaView)
-
-Consulte `package.json` para versões completas.
-
----
-
-## ✅ Recursos implementados
-- Busca de moedas via API pública e listagem em um `Picker` (`src/Components/Picker`).
-- Tratamento de estados de carregamento (`ActivityIndicator`) e erro (envio ao Sentry e `Alert`).
-- Uso de `SafeAreaView` para compatibilidade com dispositivos modernos.
-
----
-
-## Estrutura do projeto (resumo)
-- `App.js` — lógica principal, carregamento de moedas e integração com Sentry.
-- `src/components/Picker` — componente de seleção de moeda.
-- `src/services/api.js` — configuração do axios com a baseURL da API.
-- `android/` e `ios/` — projetos nativos gerados.
-
----
-
-## 🚀 Como rodar localmente
-1. Instale as dependências
+To start the Metro dev server, run the following command from the root of your React Native project:
 
 ```sh
-# npm
-npm install
-# ou
-yarn install
-```
-
-2. Inicie o Metro Bundler
-
-```sh
+# Using npm
 npm start
-# ou
+
+# OR using Yarn
 yarn start
 ```
 
-3. Rode no Android
+## Step 2: Build and run your app
+
+With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+
+### Android
 
 ```sh
+# Using npm
 npm run android
-# ou
+
+# OR using Yarn
 yarn android
 ```
-
-4. Rode no iOS (macOS)
-
-```sh
-bundle install
-bundle exec pod install
-npm run ios
-# ou
-yarn ios
-```
-
-> Observação: é necessário ter o ambiente React Native configurado (Android Studio/Xcode, variáveis de ambiente etc.). Veja o guia oficial: https://reactnative.dev/docs/environment-setup
-
----
-
-## 🧪 Testes e lint
-- Testes: `npm test` (Jest)
-- Lint: `npm run lint` (ESLint)
-
----
-
-## ⚙️ Configurações/Notas
-- O projeto já integra o Sentry dentro de `App.js`. Para usar seu próprio projeto Sentry, substitua o DSN no arquivo por uma variável de ambiente ou sua chave DSN.
-- `package.json` exige Node >= 20.
-
----
-
-## 💡 Contribuições
-Contribuições são bem-vindas. Abra issues ou pull requests com melhorias (ex.: UI, testes, tratamento de erro com retry/tentar novamente).
-
----
-
-## 📄 Licença
-Este projeto está disponível sob a licença do repositório (adapte se necessário).
-
-
----
-
-Se quiser, posso adicionar uma seção com instruções de como configurar o Sentry com variáveis de ambiente ou criar um botão "Tentar novamente" na tela de erro. Quer que eu implemente isso? ✨
 
 ### iOS
 
